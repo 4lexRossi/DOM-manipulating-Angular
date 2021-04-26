@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlosIfDirective } from './alos-if.directive';
 import { alosForDirective } from './alos-for.directive';
+import { alosSwitchCaseDirective, alosSwitchDirective } from './alos-switch.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlosIfDirective,
-    alosForDirective
+    alosForDirective,
+    alosSwitchDirective,
+    alosSwitchCaseDirective
   ],
   imports: [
     BrowserModule,
