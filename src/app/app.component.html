@@ -19,9 +19,14 @@
 
 <hr>
 
-<div [ngSwitch]="value">
+<!-- <div [ngSwitch]="value">
   <div *ngSwitchCase="'A'">AAA</div>
   <div *ngSwitchCase="'B'">BBB</div>
+</div> -->
+
+<div [alosSwitch]="value">
+  <div *alosSwitchCase="'A'">AAA</div>
+  <div *alosSwitchCase="'B'">BBB</div>
 </div>
 
 <button (click)="toogle()">Toogle</button>
