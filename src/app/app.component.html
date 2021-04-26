@@ -1,7 +1,28 @@
-<!-- <ng-template [alosIf]="flag"> -->
-  <div *alosIf="flag">Test 1</div>
-<!-- </ng-template> -->
-
-
+<div *alosIf="flag">Test 1</div>
 
 <button (click)="onClick()">Click</button>
+
+<hr>
+
+<!-- <div *ngFor="let item of list">{{ item }}</div> -->
+<!-- <ng-template ngFor [ngForOf]="list" let-asd>
+  <div>{{ asd }}</div>
+</ng-template> -->
+
+<!-- <ng-template alosFor [alosForFrom]="list" let-item let-index="index">
+  {{ item }}
+</ng-template> -->
+
+<div *alosFor="let item from list let index=index" >
+  {{index }} {{ item }}
+</div>
+
+<hr>
+
+<div [ngSwitch]="value">
+  <div *ngSwitchCase="'A'">AAA</div>
+  <div *ngSwitchCase="'B'">BBB</div>
+</div>
+
+<button (click)="toogle()">Toogle</button>
+

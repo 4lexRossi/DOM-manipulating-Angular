@@ -10,7 +10,15 @@ export class AppComponent {
 
   flag: boolean;
 
+  list = ['A', 'B', 'C'];
+
+  value: 'A' | 'B' = 'A'
+
   onClick() {
     this.flag = !this.flag;
+  }
+
+  toogle() {
+    this.value = this.value === 'A' ? 'B' : 'A';
   }
 }
